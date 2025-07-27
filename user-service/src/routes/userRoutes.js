@@ -7,6 +7,6 @@ const router = express.Router();
 
 router.post('/register', registerUser);
 router.post('/login', loginUser);
-// Add more routes for getting user, updating user, etc.
+router.put('/:username', userController.updateUserProfile);
 
 module.exports = router;
